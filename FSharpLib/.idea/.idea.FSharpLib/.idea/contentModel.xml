@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ContentModelStore">
+    <e p="C:\Users\ChessMax\.Rider2018.3\config\consoles\db" t="IncludeRecursive" />
+    <e p="C:\Users\ChessMax\.Rider2018.3\system\extResources" t="IncludeRecursive" />
+    <e p="C:\Users\ChessMax\.Rider2018.3\system\resharper-host\local\Transient\ReSharperHost\v183\SolutionCaches\_FSharpLib.-163985927.00" t="ExcludeRecursive" />
+    <e p="D:\UnityProjects\FSharpUnityProject\FSharpLib" t="IncludeRecursive">
+      <e p="bin" t="ExcludeRecursive" />
+      <e p="FSharpLib.fsproj" t="IncludeRecursive" />
+      <e p="FSharpLib.sln" t="IncludeFlat" />
+      <e p="Library.fs" t="Include" />
+      <e p="obj" t="ExcludeRecursive" />
+      <e p="packages" t="ExcludeRecursive" />
+    </e>
+  </component>
+</project>

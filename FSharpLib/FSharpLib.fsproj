@@ -1,0 +1,28 @@
+﻿<Project Sdk="Microsoft.NET.Sdk">
+
+    <PropertyGroup>
+        <TargetFramework>netstandard2.0</TargetFramework>
+    </PropertyGroup>
+
+    <ItemGroup>
+        <Compile Include="Library.fs" />
+    </ItemGroup>
+
+    <ItemGroup>
+      <Reference Include="Assembly-CSharp, Version=0.0.0.0, Culture=neutral, PublicKeyToken=null">
+        <HintPath>..\Library\ScriptAssemblies\Assembly-CSharp.dll</HintPath>
+      </Reference>
+      <Reference Include="UnityEngine, Version=0.0.0.0, Culture=neutral, PublicKeyToken=null">
+        <HintPath>C:\Program Files\Unity\Hub\Editor\2019.1.8f1\Editor\Data\Managed\UnityEngine.dll</HintPath>
+      </Reference>
+      <Reference Include="UnityEngine.CoreModule, Version=0.0.0.0, Culture=neutral, PublicKeyToken=null">
+        <HintPath>C:\Program Files\Unity\Hub\Editor\2019.1.8f1\Editor\Data\Managed\UnityEngine\UnityEngine.CoreModule.dll</HintPath>
+      </Reference>
+    </ItemGroup>
+
+    <Target Name="PostBuild" AfterTargets="PostBuildEvent">
+      <Exec Command="copy /y &quot;$(TargetPath)&quot; &quot;$(ProjectDir)\..\Assets\Libraries\&quot;" />
+      <Exec Command="copy /y &quot;$(TargetDir)$(TargetName).pdb&quot; &quot;$(ProjectDir)\..\Assets\Libraries\&quot;" />
+    </Target>
+
+</Project>
